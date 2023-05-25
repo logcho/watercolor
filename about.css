@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('PPNeueBit-Regular.otf') format('openype'),
+         url('PPMondwest-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'fancy';
+    src: url('PPMondwest-Regular.otf') format('openype'),
+        url('PPEditorialOld-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #E4FFFA;
+
+}
+
+
+section {
+    align-items: end;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    font-family: 'fancy', sans-serif;
+    font-size: 4vw;
+}
+
+.back {
+    width: 3vw;
+    height: auto;
+    margin: 3vw;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Helvetica, sans-serif;
+}
+
+
+.about-image {
+    width: 50vw;
+    height: auto;
+    animation: hover 4s infinite;
+
+}
+
+@keyframes hover {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+
+.text {
+    width: 40vw;
+    height: auto;
+    padding: 5vw;
+    font-size: 1.5vw;
+}
+
+
+
+
+/* FOOTER FOOTER FOOTER */
+
+.marquee {
+    position: absolute;
+    bottom: 16vh;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    color: grey;
+    font-size: 5vh;
+    pointer-events: none;
+    font-family: 'pixel';
+  }
+ 
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    font-family: 'pixel', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;   
+}
+
+footer p {
+    font-size: 1vw;
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 0;
+}
+.footer-icons img{
+    margin: 0 3vw;
+    width: 3vw;
+    height: auto;
+}
+/* FOOTER FOOTER FOOTER */
+
+@media only screen and (max-width: 768px) {
+    /* your CSS here */
+    .back {
+        width: 4vh;
+        height: auto;
+        margin: 4vh;
+    }
+
+    h1 {
+        text-align: center;
+        font-style: italic;
+        font-family: 'fancy', sans-serif;
+        font-size: 4vh;
+    }
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        font-family: Helvetica, sans-serif;
+    }
+
+    .about-image {
+        width: 30vh;
+        height: auto;
+        margin-top: 5vh;
+    }
+    
+    .text {
+        width: 80%;
+        height: auto;
+        padding: 5vw;
+        font-size: 2vh;
+    }
+    /* FOOTER FOOTER FOOTER */
+
+    
+    .marquee {
+        position: absolute;
+        bottom: 6vh;
+        width: 100vw;
+        max-width: 100%;
+        height: 200px;
+        overflow-x: hidden;
+        color: grey;
+        font-size: 4vh;
+        pointer-events: none;
+        font-family: 'pixel';
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+
+        font-family: 'pixel', sans-serif;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;   
+    }
+
+    footer p {
+        font-size: 1vh;
+        margin-top: 0;
+        margin-bottom: 2vh;
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10vh 0;
+    }
+    .footer-icons img{
+        margin: 0 2vh;
+        width: 3vh;
+        height: auto;
+    }
+    /* FOOTER FOOTER FOOTER */
+}
