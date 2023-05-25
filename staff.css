@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'pixel';
     src: url('PPNeueBit-Regular.otf') format('openype'),
-         url('PPMondwest-Bold.otf') format('opentype');
+         url('PPNeueBit-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
