@@ -1,10 +1,17 @@
 @font-face {
     font-family: 'pixel';
-    src: url('PPNeueBit-Regular.otf') format('openype'),
+    src: url('PPNeueBit-Regular.otf') format('opentype'),
          url('PPNeueBit-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
+@font-face {
+    font-family: 'boldpixel';
+    src: url('PPMondwest-Bold.otf') format('opentype'),
+        url('PPMondwest-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'fancy';
     src: url('PPMondwest-Regular.otf') format('openype'),
@@ -231,7 +238,7 @@ footer p {
         color: grey;
         font-size: 4vh;
         pointer-events: none;
-        font-family: 'pixel';
+        font-family: 'boldpixel';
       }
 
 
