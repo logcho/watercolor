@@ -367,6 +367,7 @@ footer p {
         justify-content: space-around;
         font-family: Helvetica, sans-serif;
         padding: 5vw;
+        overflow-x: hidden;
     }
 
     /* FOOTER FOOTER FOOTER */
