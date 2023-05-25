@@ -278,6 +278,7 @@ footer p {
     }
     .email input {
         width: 45%;
+        border-radius: 0;
     }
     
     .message {
@@ -294,6 +295,8 @@ footer p {
     
     .message input {
         width: 100%;
+        border-radius: 0;
+
     }
     
     button {
