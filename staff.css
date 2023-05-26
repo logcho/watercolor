@@ -128,7 +128,7 @@ h2 {
     color: grey;
     font-size: 5vh;
     pointer-events: none;
-    font-family: 'pixel';
+    font-family: 'boldpixel';
 }
   
 .track {
@@ -238,7 +238,6 @@ footer p {
         color: grey;
         font-size: 4vh;
         pointer-events: none;
-        font-family: 'boldpixel';
       }
 
 
