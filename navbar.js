@@ -16,3 +16,15 @@ toggleBtn.onclick = function() {
   }
 };
 
+overlay.onclick = function() {
+  dropDownMenu.classList.toggle('open');
+  toggleBtn.classList.toggle('open');
+  overlay.classList.toggle('open');
+  
+  // Add shading effect
+  if (dropDownMenu.classList.contains('open')) {
+    overlay.style.display = 'block'; // Show the overlay when the dropdown menu is open
+  } else {
+    overlay.style.display = 'none'; // Hide the overlay when the dropdown menu is closed
+  }
+};
