@@ -456,7 +456,7 @@ footer p {
   /* NAVEBAR BUTTON NAVBAR BUTTON */
   .marquee {
     position: absolute;
-    bottom: 6.5vh;
+    bottom: 7vh;
     width: 100vw;
     max-width: 100%;
     height: 200px;
