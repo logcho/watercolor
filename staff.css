@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'pixel';
-    src: url('PPNeueBit-Regular.otf') format('opentype'),
-         url('PPNeueBit-Regular.otf') format('opentype');
+    src: url('PPMondwest-Regular.otf') format('opentype'),
+         url('PPMondwest-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
@@ -46,7 +46,7 @@ h1 {
 
 h2 {
     font-size: 3vw;
-    font-family: 'boldpixel';
+    font-family: 'pixel';
     margin: 0px;
 }
 .position {
@@ -220,7 +220,7 @@ footer p {
 
     h2 {
         font-size: 4vh;
-        font-family: 'boldpixel';
+        font-family: 'pixel';
         margin: 0px;
     }
 
