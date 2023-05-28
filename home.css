@@ -161,6 +161,30 @@ footer p {
   overflow-x: hidden;
   animation: fade-in .25s ease-in; /* Animation for fade-in effect */
 }
+.center {
+    position: fixed; /* make the image fixed */
+    top: 82%; /* center the image vertically */
+    left: 50%; /* center the image horizontally */
+    transform: translate(-50%, -50%); /* adjust the position of the image */
+   
+}
+.pop-up {
+  animation: rattle 2s ease-in-out, fade-out 4s ease-in-out;
+  border: 2px solid #4f9bc7;
+  border-radius: 4px;
+  padding: 1vw;
+  font-family: 'pixel';
+  opacity: 0;
+
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 @keyframes fade-in {
   0% {
