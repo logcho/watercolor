@@ -170,7 +170,7 @@ footer p {
 }
 .pop-up {
   animation: rattle 2s ease-in-out, fade-out 4s ease-in-out;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   border-radius: 4px;
   padding: 1vw;
   font-family: 'pixel';
