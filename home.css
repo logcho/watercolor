@@ -83,14 +83,13 @@ h2 {
 /* NAVBAR NAVBAR NAVBAR */
 .toggle_btn {
     position: fixed; /* make the image fixed */
-    top: 90%; /* center the image vertically */
+    bottom: 20px;
     left: 50%; /* center the image horizontally */
     transform: translate(-50%, -50%); /* adjust the position of the image */
     transition: transform .3s ease-in-out; /* add a transition to make the button shift down smoothly */   
     background-color: transparent;
     border-color: transparent;
     z-index: 1;
-
 }
 .toggle_btn img {
     width: 100px;
@@ -101,16 +100,16 @@ h2 {
 }
 .toggle_btn.open {
     position: fixed;
-    transform: translate(-50%, -5%);    
+    transform: translate(-50%, 0%);    
     left: 50%; /* center the image horizontally */
 }
 .dropdown_menu {
     display: none;
     position: fixed; 
     height: 0;
-    top: 90%; /* center the image vertically */
+    bottom: 0;
     left: 50%; /* center the image horizontally */
-    transform: translate(-50%, -100%); /* adjust the position of the image */
+    transform: translate(-50%, -50%); /* adjust the position of the image */
     background-color: #E4FFFA;
     overflow: hidden;
     border-radius: 1rem;
