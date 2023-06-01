@@ -86,7 +86,7 @@ h2 {
     bottom: 20px;
     left: 50%; /* center the image horizontally */
     transform: translate(-50%, -50%); /* adjust the position of the image */
-    transition: transform .3s ease-in-out; /* add a transition to make the button shift down smoothly */   
+    transition: transform .2s ease-in-out; /* add a transition to make the button shift down smoothly */   
     background-color: transparent;
     border-color: transparent;
     z-index: 1;
