@@ -272,14 +272,14 @@ footer p {
         font-size: 20px;
     }
     .timer {
-        gap: 20px;
+        gap: 15px;
         padding: 50px 0;
     }
     .timer-segment {
         gap: 15px;
     }
     .time {
-        font-size: 60px;
+        font-size: 75px;
     }
     .time-label {
         font-size: 20px;
