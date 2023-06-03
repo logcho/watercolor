@@ -193,9 +193,11 @@ footer p {
         width: 150px;
         height: auto;
     }
+    
 
     .description {
         text-align: center;
+        font-size: 20px;
     }
   
     /* FOOTER FOOTER FOOTER */
