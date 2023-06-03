@@ -1,75 +1,69 @@
 @font-face {
     font-family: 'pixel';
-    src: url('PPMondwest-Regular.otf') format('opentype'),
-         url('PPMondwest-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-@font-face {
-    font-family: 'boldpixel';
-    src: url('PPMondwest-Bold.otf') format('opentype'),
-        url('PPMondwest-Bold.otf') format('opentype');
+    src: url('fonts/PPMondwest-Regular.otf') format('openype'),
+         url('fonts/PPMondwest-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'fancy';
-    src: url('PPMondwest-Regular.otf') format('openype'),
-        url('PPEditorialOld-Italic.otf') format('opentype');
+    src: url('fonts/PPEditorialOld-Italic.otf') format('openype'),
+        url('fonts/PPEditorialOld-Italic.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-    }
-
-body {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    justify-content: space-around;
-    background-color: whitesmoke;
-
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
-section {
-    align-items: end;
+body {
+    background-color: white;
+    position: relative;
+    min-height: 100vh;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.backarrow {
+    width: 50px;
+    margin: 50px;
+    height: auto;
+}
+
+main {
+    flex: 1; /* takes up the screen */
+    color: black;
+    justify-content: center;
+    align-items: center;
+    height: 2500px;
+    padding-top: 50px;
 }
 
 h1 {
+    font-size: 50px;
     text-align: center;
-    font-style: italic;
-    font-family: 'fancy', sans-serif;
-    font-size: 4vw;
+    font-weight: normal;
+    font-family: 'fancy';
 }
 
 h2 {
-    font-size: 3vw;
+    font-size: 40px;
+    font-weight: normal;
     font-family: 'pixel';
-    margin: 0px;
-}
-.position {
-    margin: 0;
 }
 
-.back {
-    width: 3vw;
-    height: auto;
-    margin: 3vw;
-}
-
-.main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    font-family: Helvetica, sans-serif;
-}
-
-.staff {
+.team {
+    padding-top: 50px;
     display: grid;
-    row-gap: 5vh;
+    row-gap: 80px;
+    align-items: center;
+    justify-content: center;
 }
 
 .person {
@@ -77,9 +71,81 @@ h2 {
     place-items: center;
     grid-template-rows: auto, auto;
     display: flex;
-    column-gap: 4vw;
+    column-gap: 50px;
     animation: slide-in 1s ease-in-out forwards;
+}
 
+.team img {
+    width: 200px;
+    height: auto;
+    justify-content: space-around;
+    border: 5px solid black;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    justify-content: space-around;
+    font-family: Helvetica;
+}
+
+
+/* FOOTER FOOTER FOOTER */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0 50px 0;
+}
+.footer-icons img{
+    margin: 0 50px;
+    width: 50px;
+    height: auto;
+}
+footer p {
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: white;
+    font-family: Helvetica;
+}
+.marquee {
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    height: 50px;
+    overflow-x: hidden;
+    color: grey;
+    background-color: white;
+    font-size: 50px;
+    pointer-events: none;
+    font-family: 'pixel';
+}  
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+}
+/* FOOTER FOOTER FOOTER */
+
+/* KEYFRAMES KEYFRAMES KEYFRAMES */
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 @keyframes slide-in {
     0% {
@@ -91,185 +157,69 @@ h2 {
       transform: translateX(0);
     }
 }
-
-.staff img {
-    width: 10vw;
-    height: auto;
-    justify-content: space-around;
-    border: .25em solid black;
-    justify-content: center;
-}
-
-.profile {
-    display: flex;
-    justify-content: center;
-}
-
-.description {
-
-    justify-content: space-around;
-    font-family: Helvetica;
-  
-}
+/* KEYFRAMES KEYFRAMES KEYFRAMES */
 
 
 
 
-/* FOOTER FOOTER FOOTER */
-
-.marquee {
-    position: absolute;
-    bottom: 16vh;
-    width: 100vw;
-    max-width: 100%;
-    height: 200px;
-    overflow-x: hidden;
-    color: grey;
-    font-size: 5vh;
-    pointer-events: none;
-    font-family: 'boldpixel';
-}
-  
-.track {
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 32s linear infinite;
-}
-  
-@keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-}
 
 
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
 
-    font-family: 'pixel', sans-serif;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 1;   
-}
 
-footer p {
-    font-size: 1vw;
-    margin-top: 0;
-    margin-bottom: 2vh;
-}
-
-.footer-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10vh 0;
-}
-.footer-icons img{
-    margin: 0 3vw;
-    width: 3vw;
-    height: auto;
-}
-/* FOOTER FOOTER FOOTER */
+/* MOBILE MOBILE MOBILE */
 
 @media only screen and (max-width: 768px) {
-    /* your CSS here */
-    .back {
-        width: 4vh;
-        height: auto;
-        margin: 4vh;
+    main {
+        flex: 1; /* takes up the screen */
+        background-color: white;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
     }
 
-    h1 {
-        text-align: center;
-        font-style: italic;
-        font-family: 'fancy', sans-serif;
-        font-size: 6vh;
-        margin-bottom: 6vh;
+    main {
+        height: 3000px;
     }
-    .main {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-around;
-        font-family: Helvetica, sans-serif;
+
+    .backarrow {
+        width: 30px;
+        height: auto;
     }
 
     .person {
         display: grid;
-        place-items: center;
-        row-gap: 2vh;
     }
+
+    .person img {
+        width: 200px;
+        height: auto;
+    }
+
     .description {
-        justify-content: space-around;
-        font-family: Helvetica;
         text-align: center;
-        font-size: 2vh;
     }
-    .staff img {
-        width: 18vh;
-        height: auto;
-        justify-content: space-around;
-        border: .25em solid black;
-        justify-content: center;
-    }
-
-    h2 {
-        font-size: 4vh;
-        font-family: 'pixel';
-        margin: 0px;
-    }
-
-
+  
     /* FOOTER FOOTER FOOTER */
-
-    .marquee {
-        position: absolute;
-        bottom: 7vh;
-        width: 100vw;
-        max-width: 100%;
-        height: 200px;
-        overflow-x: hidden;
-        color: grey;
-        font-size: 4vh;
-        pointer-events: none;
-      }
-
-
-    footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-
-        font-family: 'pixel', sans-serif;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        z-index: 1;   
-    }
-
-    footer p {
-        font-size: 1vh;
-        margin-top: 0;
-        margin-bottom: 2vh;
-    }
-
     .footer-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10vh 0;
+        margin: 100px 0 40px 0;
     }
     .footer-icons img{
-        margin: 0 2vh;
-        width: 3vh;
+        margin: 0 20px;
+        width: 20px;
         height: auto;
     }
+    footer p {
+        margin: 0 0 20px 0;
+        font-size: 10px;
+    }
+    .marquee {
+        height: 40px;
+        font-size: 40px;
+    }  
     /* FOOTER FOOTER FOOTER */
+
 }
+/* MOBILE MOBILE MOBILE */
+
+
