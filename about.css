@@ -1,220 +1,200 @@
 @font-face {
     font-family: 'pixel';
-    src: url('PPNeueBit-Regular.otf') format('openype'),
-         url('PPMondwest-Bold.otf') format('opentype');
+    src: url('fonts/PPMondwest-Regular.otf') format('openype'),
+         url('fonts/PPMondwest-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-  }
+}
 @font-face {
     font-family: 'fancy';
-    src: url('PPMondwest-Regular.otf') format('openype'),
-        url('PPEditorialOld-Italic.otf') format('opentype');
+    src: url('fonts/PPEditorialOld-Italic.otf') format('openype'),
+        url('fonts/PPEditorialOld-Italic.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-    }
-
-body {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    background-color: whitesmoke;
-
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
-section {
-    align-items: end;
+body {
+    background-color: white;
+    position: relative;
+    min-height: 100vh;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.backarrow {
+    width: 50px;
+    margin: 50px;
+    height: auto;
+}
+
+main {
+    flex: 1; /* takes up the screen */
+    color: black;
+    justify-content: center;
+    align-items: center;
+    height: 1500px;
+    padding-top: 50px;
 }
 
 h1 {
+    font-size: 50px;
     text-align: center;
-    font-style: italic;
-    font-family: 'fancy', sans-serif;
-    font-size: 4vw;
+    font-weight: normal;
+    font-family: 'fancy';
 }
 
-.back {
-    width: 3vw;
-    height: auto;
-    margin: 3vw;
-}
-
-.main {
+.about {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    font-family: Helvetica, sans-serif;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 100px;
 }
-
 
 .about-image {
-    width: 50vw;
+    width: 600px;
     height: auto;
     animation: hover 4s infinite;
-
 }
-
-@keyframes hover {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-  }
-
 
 .text {
-    width: 40vw;
+    width: 600px;
     height: auto;
-    padding: 5vw;
-    font-size: 1.5vw;
+    font-size: 20px;
+    font-family: Helvetica;
 }
+
 
 
 
 
 /* FOOTER FOOTER FOOTER */
-
-.marquee {
-    position: absolute;
-    bottom: 16vh;
-    width: 100vw;
-    max-width: 100%;
-    height: 200px;
-    overflow-x: hidden;
-    color: grey;
-    font-size: 5vh;
-    pointer-events: none;
-    font-family: 'pixel';
-  }
- 
-  .track {
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 32s linear infinite;
-  }
-  
-  @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
-
-
 footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-
-    font-family: 'pixel', sans-serif;
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
     height: auto;
-    z-index: 1;   
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
-
-footer p {
-    font-size: 1vw;
-    margin-top: 0;
-    margin-bottom: 2vh;
-}
-
 .footer-icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10vh 0;
+    margin: 150px 0 50px 0;
 }
 .footer-icons img{
-    margin: 0 3vw;
-    width: 3vw;
+    margin: 0 50px;
+    width: 50px;
     height: auto;
+}
+footer p {
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: white;
+    font-family: Helvetica;
+}
+.marquee {
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    height: 50px;
+    overflow-x: hidden;
+    color: grey;
+    background-color: white;
+    font-size: 50px;
+    pointer-events: none;
+    font-family: 'pixel';
+}  
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
 }
 /* FOOTER FOOTER FOOTER */
 
+/* KEYFRAMES KEYFRAMES KEYFRAMES */
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+@keyframes hover {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+/* KEYFRAMES KEYFRAMES KEYFRAMES */
+
+
+
+
+
+
+
+
+/* MOBILE MOBILE MOBILE */
+
 @media only screen and (max-width: 768px) {
-    /* your CSS here */
-    .back {
-        width: 4vh;
-        height: auto;
-        margin: 4vh;
+    main {
+        flex: 1; /* takes up the screen */
+        background-color: white;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
     }
 
-    h1 {
-        text-align: center;
-        font-style: italic;
-        font-family: 'fancy', sans-serif;
-        font-size: 4vh;
-    }
-    .main {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-around;
-        font-family: Helvetica, sans-serif;
+    main {
+        height: 2000px;
     }
 
     .about-image {
-        width: 30vh;
+        width: 500px;
         height: auto;
-        margin-top: 5vh;
     }
-    
-    .text {
-        width: 80%;
+
+
+    .backarrow {
+        width: 30px;
         height: auto;
-        padding: 5vw;
-        font-size: 2vh;
     }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+  
     /* FOOTER FOOTER FOOTER */
-
-    
-    .marquee {
-        position: absolute;
-        bottom: 7vh;
-        width: 100vw;
-        max-width: 100%;
-        height: 200px;
-        overflow-x: hidden;
-        color: grey;
-        font-size: 4vh;
-        pointer-events: none;
-        font-family: 'pixel';
-    }
-
-    footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-
-        font-family: 'pixel', sans-serif;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        z-index: 1;   
-    }
-
-    footer p {
-        font-size: 1vh;
-        margin-top: 0;
-        margin-bottom: 2vh;
-    }
-
     .footer-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10vh 0;
+        margin: 100px 0 40px 0;
     }
     .footer-icons img{
-        margin: 0 2vh;
-        width: 3vh;
+        margin: 0 20px;
+        width: 20px;
         height: auto;
     }
+    footer p {
+        margin: 0 0 20px 0;
+        font-size: 10px;
+    }
+    .marquee {
+        height: 40px;
+        font-size: 40px;
+    }  
     /* FOOTER FOOTER FOOTER */
+
 }
+/* MOBILE MOBILE MOBILE */
+
+
