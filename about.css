@@ -161,8 +161,11 @@ footer p {
     }
 
     .about-image {
-        width: 500px;
-        height: auto;
+        width: 400px;
+    }
+    
+    .text {
+        width: 400px;
     }
 
 
