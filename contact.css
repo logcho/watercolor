@@ -191,12 +191,16 @@ footer p {
 
     input {
         margin-bottom: 20px;
-        width:200px
+        width:100px
     }
 
     textarea {
 
-        width: 200px;
+        width: 100px;
+    }
+    
+    button {
+        color: black;
     }
 
 
