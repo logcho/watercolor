@@ -1,9 +1,8 @@
 window.onload = function() {
-    var countDownDate = new Date("June 19, 2023 00:00:00").getTime();
   
     // Rest of the code here
   
-    var countDownDate = new Date("June 19, 2023 00:00:00").getTime();
+    var countDownDate = new Date("July 1, 2023 00:00:00").getTime();
   
     // Update the count down every 1 second
     var x = setInterval(function() {
