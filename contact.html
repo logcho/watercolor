@@ -3,97 +3,54 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home</title>
+        <title>Watercolor</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="contact.css">
     </head>
     <body>
-        <section>
-            <a href="index.html"><img src="back.png" alt="back" class="back"></a>
-        </section>
-        
+
+
         <header>
-            <h1>Let's get in touch</h1>
+            <a href="index.html"><img src="images/arrow.png" alt="arrow" class="backarrow"></a>
         </header>
-        <div class="main">
+
+        <main>
+            <h1>Lets get in touch</h1>
+            <h2>HAVE A PROBLEM WITH A GAME? WE'LL HELP YOU RESOLVE IT AS SOON AS POSSIBLE</h2>
+
+
+            <form action="contact.php" method="POST">
+                <div class="sender">
+                    <input type="text" placeholder="NAME" id="name" name="name">
+                    <input type="text" placeholder="EMAIL" id="email" name="email">
+                </div>
+                <textarea placeholder="MESSAGE" name="message" id="message" cols="30" rows="10"></textarea>
+                <button type="submit">SEND</button>
+            </form>
             
+    
 
-            <div class="contact">
-                <p>
-                    HAVE A PROBLEM WITH A GAME? WE'LL HELP YOU RESOLVE IT AS SOON AS POSSIBLE
-                </p>
 
-                    <form action="contact.php" method="post">
-                        <div class="email">
-                            <input type="text" placeholder="NAME" id="name">
-                            <input type="text" placeholder="EMAIL" id="email">
-                        </div>
-                        <div class="message">
-                            <input type="text" placeholder="MESSAGE" id="message-input">
-                            <button id="submit-button"> > </button>
-                        </div>
-                    </form>
-                <p>
-                    <br>HAVE A GAME IDEA? CONTACT US AT CAREERS@WATERCOLORGAMES.COM
-                </p>
-            </div>
-   
-        </div>
+        </main>
+      
 
-        <script>
-            document.getElementById("contact-form").addEventListener("submit", function (event) {
-                event.preventDefault(); // Prevent the form from submitting by default
-
-                // Retrieve form data
-                var name = document.getElementById("name").value;
-                var email = document.getElementById("email").value;
-                var message = document.getElementById("message-input").value;
-
-                // Perform any necessary validation
-
-                // Create an object to store form data
-                var formData = {
-                    name: name,
-                    email: email,
-                    message: message
-                };
-
-                // Perform any additional processing or data handling as desired
-                // For example, you can send an AJAX request to the server with the form data
-
-                // Uncomment the following line to log the form data to the console (for testing purposes)
-                console.log(formData);
-
-                // Finally, submit the form programmatically
-                event.target.submit();
-            });
-        </script>
-        
-        <p style="font-size: 20vh; opacity: 0;">0</p>
-
-        
-
-        <div>
+        <footer>
             <div class="marquee">
                 <div class="track">
                   <div class="content">&nbsp;watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor</div>
                 </div>
             </div>
-            <footer>
-                <div class="footer-icons">
-                    <a href="https://discord.gg/mw4y6QZYfv"><img src="Discord - Negative.png"></a>
-                    <a href="https://www.instagram.com/watercolorgames/"><img src="Instagram - Negative.png"></a>
-                    <a href="#"><img src="YouTube - Negative.png"></a>
-                    <a href="https://www.tiktok.com/@watercolorgames?_t=8cbM6kcYLmg&_r=1"><img src="TikTok - Negative.png"></a>
-                    <a href="https://www.linkedin.com/company/watercolorgames/"><img src="LinkedIn - Negative.png"></a>
-                    </div>
-                    <p>WATERCOLOR GAMES 2023<br>ALL RIGHTS RESERVED</p>
-            </footer>
-        </div>
-      
 
-       
+            <div class="footer-icons">
+                <a href="https://discord.gg/mw4y6QZYfv"><img src="images/Discord - Negative.png"></a>
+                <a href="https://www.instagram.com/watercolorgames/"><img src="images/Instagram - Negative.png"></a>
+                <a href="#"><img src="images/YouTube - Negative.png"></a>
+                <a href="https://www.tiktok.com/@watercolorgames?_t=8cbM6kcYLmg&_r=1"><img src="images/TikTok - Negative.png"></a>
+                <a href="https://www.linkedin.com/company/watercolorgames/"><img src="images/LinkedIn - Negative.png"></a>
+            </div>
+            <p>WATERCOLOR GAMES 2023<br>ALL RIGHTS RESERVED</p>
+        </footer>
 
     </body>
 </html>
