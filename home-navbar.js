@@ -2,6 +2,7 @@
 const toggleBtn = document.querySelector('.toggle_btn');
 const dropDownMenu = document.querySelector('.dropdown_menu');
 const overlay = document.querySelector('.overlay');
+const popup = document.querySelector('.popup')
 
 toggleBtn.onclick = function() {
   dropDownMenu.classList.toggle('open');
@@ -15,7 +16,6 @@ toggleBtn.onclick = function() {
     overlay.style.display = 'none'; // Hide the overlay when the dropdown menu is closed
   }
 };
-
 overlay.onclick = function() {
   dropDownMenu.classList.toggle('open');
   toggleBtn.classList.toggle('open');
@@ -28,3 +28,10 @@ overlay.onclick = function() {
     overlay.style.display = 'none'; // Hide the overlay when the dropdown menu is closed
   }
 };
+
+popup.onclick = function() {
+  dropDownMenu.classList.toggle('open');
+  toggleBtn.classList.toggle('open');
+  overlay.classList.toggle('open');
+  popup.classList.toggle('open');
+}
