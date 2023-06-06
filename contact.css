@@ -200,6 +200,10 @@ footer p {
 
         width: 250px;
     }
+    
+    button {
+        color: black;
+    }
 
 
     .backarrow {
