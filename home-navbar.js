@@ -34,4 +34,4 @@ popup.onclick = function() {
   toggleBtn.classList.toggle('open');
   overlay.classList.toggle('open');
   popup.classList.toggle('open');
-}
+};
