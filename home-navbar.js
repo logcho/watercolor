@@ -29,10 +29,9 @@ overlay.onclick = function() {
   }
 };
 
-popup.addEventListener('click', function() {
+popup.onclick = function() {
   dropDownMenu.classList.toggle('open');
   toggleBtn.classList.toggle('open');
   overlay.classList.toggle('open');
   popup.classList.toggle('open');
-});
-
+}
