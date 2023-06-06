@@ -89,7 +89,7 @@ h2 {
     transform: translate(-50%, -50%); /* adjust the position of the image */
     background-color: black;
     border-radius: 10px;
-    width: 100px;
+    width: 110px;
     align-items: center;
     justify-content: center;
     z-index: 2;
