@@ -19,9 +19,10 @@
 }
 
 body {
-    background-color: white;
+    background-color: whitesmoke;
     position: relative;
     min-height: 100vh;
+    animation: fade-in .5s ease-in; /* Animation for fade-in effect */
 }
 header {
     width: 100%;
@@ -40,7 +41,7 @@ h1 {
 }
 main {
     flex: 1; /* takes up the screen */
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
     justify-content: center;
     align-items: center;
@@ -81,15 +82,42 @@ h2 {
 
 
 /* NAVBAR NAVBAR NAVBAR */
+.popup {
+    position: fixed; /* make the image fixed */
+    bottom: 60px;
+    left: 50%; /* center the image horizontally */
+    transform: translate(-50%, -50%); /* adjust the position of the image */
+    background-color: black;
+    border-radius: 10px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: default;
+}
+
+.popup.open {
+    opacity: 0;
+    pointer-events: none;
+}
+
+h4 {
+    font-size: 30px;
+    font-family: Helvetica;
+    text-align: center;
+    animation: rainbow-colors 2s linear infinite;
+    animation-delay: calc(-2s * var(--char-percent));
+}
+  
 .toggle_btn {
     position: fixed; /* make the image fixed */
     bottom: 20px;
     left: 50%; /* center the image horizontally */
     transform: translate(-50%, -50%); /* adjust the position of the image */
-    transition: transform .5s ease-in-out; /* add a transition to make the button shift down smoothly */   
     background-color: transparent;
     border-color: transparent;
     z-index: 1;
+    transition: transform .5s ease-in-out; /* add a transition to make the button shift down smoothly */   
 }
 .toggle_btn img {
     width: 100px;
@@ -98,11 +126,10 @@ h2 {
 .toggle_btn:hover img {
     transform: scale(1.2);
 }
+
 .toggle_btn.open {
-    position: fixed;
-    transform: translate(-50%, 0%);    
-    left: 50%; /* center the image horizontally */
-}
+    transform: translate(-50%, 0%);
+  }
 .dropdown_menu {
     display: none;
     position: fixed; 
@@ -208,7 +235,7 @@ footer {
 footer p {
     text-align: center;
     margin: 0 0 50px 0;
-    color: white;
+    color: whitesmoke;
     font-family: Helvetica;
 }
 .marquee {
@@ -218,7 +245,7 @@ footer p {
     height: 50px;
     overflow-x: hidden;
     color: grey;
-    background-color: white;
+    background-color: whitesmoke;
     font-size: 50px;
     pointer-events: none;
     font-family: 'pixel';
@@ -245,6 +272,16 @@ footer p {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
 }
+
+ /* Unfortunately, browsers try to take the shortest distance between transition/animation properties, so a simple `0turn` to `1turn` doesn't get the proper effect. */
+ @keyframes rainbow-colors {
+    0% { color: hsl(134, 100%, 90%); }
+    20% { color: hsl(173, 100%, 95%); }
+    40% { color: hsl(275, 100%, 94%); }
+    60% { color: hsl(58, 100%, 95%); }
+    80% { color: hsl(0, 0%, 100%); }
+    100% { color: hsl(134, 100%, 90%); }
+  }
 /* KEYFRAMES KEYFRAMES KEYFRAMES */
 
 
@@ -259,6 +296,8 @@ footer p {
 @media only screen and (max-width: 768px) {
     main {
         flex: 1; /* takes up the screen */
+        background-color: whitesmoke;
+        color: black;
         justify-content: center;
         align-items: center;
         height: 1000px;
@@ -272,14 +311,14 @@ footer p {
         font-size: 20px;
     }
     .timer {
-        gap: 15px;
+        gap: 30px;
         padding: 50px 0;
     }
     .timer-segment {
         gap: 15px;
     }
     .time {
-        font-size: 75px;
+        font-size: 60px;
     }
     .time-label {
         font-size: 20px;
@@ -287,7 +326,9 @@ footer p {
     /* TIMER TIMER TIMER */
 
     /* NAVBAR NAVBAR NAVBAR */
-
+    .popup {
+        bottom: 50px;
+    }
     .toggle_btn img {
         width: 80px;
         height: auto;
