@@ -201,12 +201,9 @@ footer p {
 
 @media only screen and (max-width: 768px) {
     main {
-        flex: 1; /* takes up the screen */
-        background-color: white;
-        color: black;
-        justify-content: center;
-        align-items: center;
+        overflow-x: hidden;
         height: 1000px;
+        color: black;
     }
     
     h2 {
@@ -224,7 +221,6 @@ footer p {
     }
 
     textarea {
-
         width: 200px;
     }
 
