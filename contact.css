@@ -43,7 +43,7 @@ main {
     align-items: center;
     height: 1200px;
     padding-top: 50px;
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100vw;
 }
 
