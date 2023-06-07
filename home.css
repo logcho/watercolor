@@ -91,7 +91,7 @@ h2 {
     width: 110px;
     align-items: center;
     justify-content: center;
-    z-index: 3;
+    z-index: 2;
     cursor: default;
 }
 
@@ -115,7 +115,7 @@ h4 {
     transform: translate(-50%, -50%); /* adjust the position of the image */
     background-color: transparent;
     border-color: transparent;
-    z-index: 2;
+    z-index: 1;
     transition: transform .5s ease-in-out; /* add a transition to make the button shift down smoothly */   
 }
 .toggle_btn img {
@@ -219,7 +219,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: black;
-    z-index: 3;
+    z-index: 2;
 }
 .footer-icons {
     display: flex;
@@ -384,5 +384,4 @@ footer p {
 
 }
 /* MOBILE MOBILE MOBILE */
-
 
