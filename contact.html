@@ -14,7 +14,15 @@
         <header>
             <a href="index.html"><img src="images/arrow.png" alt="arrow" class="backarrow"></a>
         </header>
-
+        <script>
+            var goBackLinks = document.querySelectorAll('.backarrow');
+            for (var i = 0; i < goBackLinks.length; i++) {
+                goBackLinks[i].addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent the default link behavior
+                    history.go(-1); // Go back to the previous page
+                });
+            }
+        </script>
         <main>
             <h1>Lets get in touch</h1>
             <h2>HAVE A PROBLEM WITH A GAME? WE'LL HELP YOU RESOLVE IT AS SOON AS POSSIBLE</h2>
