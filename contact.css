@@ -97,7 +97,6 @@ button {
     margin-top: 10px;
     border-radius: 5px;
     background-color: white;
-    color: black;
     border: 5px solid #e4fffa;
     padding: 5px;
     font-family: Helvetica;
@@ -106,6 +105,29 @@ button {
 
 .careers {
     margin-top: 100px;
+}
+
+.top_right {
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 30s linear infinite;
+    width: 300px;
+    height: auto;
+    z-index: 0;
+    overflow: hidden;
+}
+.bottom_left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    animation: rotate 30s linear infinite;
+    width: 250px;
+    height: auto;
+    z-index: 0;
+    overflow: hidden;
 }
 
 /* FOOTER FOOTER FOOTER */
@@ -161,9 +183,10 @@ footer p {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
 }
-@keyframes hover {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+@keyframes rotate {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    50% { transform: translate(-50%, -50%) rotate(15deg); }
+    100% { transform: translate(-50%, -50%) rotate(0deg); }
 }
 /* KEYFRAMES KEYFRAMES KEYFRAMES */
 
@@ -183,7 +206,7 @@ footer p {
         color: black;
         justify-content: center;
         align-items: center;
-        height: 1200px;
+        height: 1000px;
     }
 
     .sender {
@@ -193,16 +216,11 @@ footer p {
 
     input {
         margin-bottom: 20px;
-        width: 250px
     }
 
     textarea {
 
-        width: 250px;
-    }
-    
-    button {
-        color: black;
+        width: 400px;
     }
 
 
@@ -210,11 +228,14 @@ footer p {
         width: 30px;
         height: auto;
     }
-    
-    h2 {
-        font-size: 15px;
+
+    .top_right {
+        width: 150px
     }
 
+    .bottom_left {
+        width: 100px;
+    }
     
   
     /* FOOTER FOOTER FOOTER */
