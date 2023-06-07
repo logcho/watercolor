@@ -208,6 +208,10 @@ footer p {
         align-items: center;
         height: 1500px;
     }
+    
+    h2 {
+        font-size: 15px;
+    }
 
     .sender {
         display: flex;
