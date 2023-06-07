@@ -44,6 +44,7 @@ main {
     height: 1200px;
     padding-top: 50px;
     overflow: hidden;
+    width: 100vw;
 }
 
 h1 {
