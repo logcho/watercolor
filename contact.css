@@ -43,6 +43,7 @@ main {
     align-items: center;
     height: 1200px;
     padding-top: 50px;
+    overflow: hidden;
 }
 
 h1 {
@@ -116,7 +117,6 @@ button {
     width: 300px;
     height: auto;
     z-index: 0;
-    overflow: hidden;
 }
 .bottom_left {
     position: absolute;
@@ -127,7 +127,6 @@ button {
     width: 250px;
     height: auto;
     z-index: 0;
-    overflow: hidden;
 }
 
 /* FOOTER FOOTER FOOTER */
