@@ -99,6 +99,7 @@ button {
     margin-top: 10px;
     border-radius: 5px;
     background-color: white;
+    color: black;
     border: 5px solid #e4fffa;
     padding: 5px;
     font-family: Helvetica;
@@ -205,7 +206,9 @@ footer p {
         height: 1000px;
         color: black;
     }
-    
+    button {
+        color: black;
+    }
     h2 {
         font-size: 15px;
     }
