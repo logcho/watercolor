@@ -122,9 +122,6 @@ h4 {
     width: 100px;
     height: auto;
 }
-.toggle_btn:hover img {
-    transform: scale(1.2);
-}
 
 .toggle_btn.open {
     transform: translate(-50%, 0%);
