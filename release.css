@@ -331,7 +331,11 @@ footer p {
         margin: 50px 0px;
         font-size: 20px;
     }
-
+    .download img {
+        width: 200px;
+        height: auto;
+        margin: 100px 25px;
+    }
     /* NAVBAR NAVBAR NAVBAR */
     .popup {
         bottom: 40px;
