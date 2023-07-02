@@ -25,6 +25,7 @@
             document.getElementById("hours").innerText = "0",
             document.getElementById("minutes").innerText = "0",
             document.getElementById("seconds").innerText = "0";
+            window.location.href = 'dot.html'; // Replace with your desired URL
 
             clearInterval(x);
           }
