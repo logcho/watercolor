@@ -5,7 +5,7 @@
         day = hour * 24;
 
   // Set the release date
-  let releaseDate = new Date("07/04/2023 00:00:00"); // Change the release date and time here
+  let releaseDate = new Date("07/01/2023 00:00:00"); // Change the release date and time here
 
   const countDown = releaseDate.getTime(),
         x = setInterval(function() {    
