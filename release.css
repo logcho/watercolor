@@ -127,11 +127,11 @@ main {
     justify-content: center;
     z-index: 2;
     cursor: default;
+    pointer-events: none;
 }
 
 .popup.open {
     opacity: 0;
-    pointer-events: none;
 }
 
 h4 {
