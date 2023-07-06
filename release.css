@@ -344,6 +344,9 @@ footer p {
     .popup {
         bottom: 40px;
     }
+    h4 {
+        font-size: 20px;
+    }
     .toggle_btn img {
         width: 80px;
         height: auto;
