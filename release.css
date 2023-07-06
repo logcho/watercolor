@@ -327,6 +327,10 @@ footer p {
     main {
         height: 1000px;
     }
+    header img {
+        width: auto;
+        height: 50px;
+    }
     h1 {
         font-size: 30px;
     }
