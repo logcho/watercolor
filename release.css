@@ -47,9 +47,13 @@ h1 {
 }
 h2 {
     font-family: 'IBM Plex Mono';
-    margin: 100px 50px;
+    margin: 100px 0px;
+    flex: 0 0 auto;
+    text-align: center;
 }
-
+.word {
+    width: 200px;
+}
 main {
     flex: 1; /* takes up the screen */
     color: white;
@@ -57,11 +61,11 @@ main {
     align-items: center;
     height: 1500px;
 }
-
 .horizontal {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-around;
 }
 .download {
     display: flex;
