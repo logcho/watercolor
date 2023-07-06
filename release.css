@@ -122,7 +122,7 @@ main {
     left: 50%; /* center the image horizontally */
     transform: translate(-50%, -50%); /* adjust the position of the image */
     color: white;
-    width: 110px;
+    width: auto;
     align-items: center;
     justify-content: center;
     z-index: 2;
