@@ -111,11 +111,10 @@ main {
 /* NAVBAR NAVBAR NAVBAR */
 .popup {
     position: fixed; /* make the image fixed */
-    bottom: 60px;
+    bottom: 90px;
     left: 50%; /* center the image horizontally */
     transform: translate(-50%, -50%); /* adjust the position of the image */
-    background-color: white;
-    border-radius: 10px;
+    color: white;
     width: 110px;
     align-items: center;
     justify-content: center;
@@ -130,15 +129,13 @@ main {
 
 h4 {
     font-size: 30px;
-    font-family: Helvetica;
+    font-family: 'IBM Plex Mono';
     text-align: center;
-    animation: rainbow-colors 2s linear infinite;
-    animation-delay: calc(-2s * var(--char-percent));
 }
   
 .toggle_btn {
     position: fixed; /* make the image fixed */
-    bottom: 35px;
+    bottom: -40px;
     left: 50%; /* center the image horizontally */
     transform: translate(-50%, -50%); /* adjust the position of the image */
     background-color: transparent;
@@ -159,7 +156,7 @@ h4 {
     display: none;
     position: fixed; 
     height: 0;
-    bottom: 0;
+    bottom: -40px;
     opacity: 0;
     left: 50%; /* center the image horizontally */
     transform: translate(-50%, -50%); /* adjust the position of the image */
