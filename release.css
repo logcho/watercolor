@@ -36,8 +36,11 @@ header {
     /* makes text center */
     justify-content: center;
     align-items: center;
-    color: white;
-    padding-top: 100px;
+    color: white
+}
+header img {
+    width: 100%;
+    height: auto;
 }
 h1 {
     text-align: center;
