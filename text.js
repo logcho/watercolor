@@ -24,7 +24,7 @@ window.onload = () => {
         clearInterval(interval);
       }
 
-      iteration += 1 / 10;
+      iteration += 1 / 4;
     }, 30);
 
     intervals.push(interval);
