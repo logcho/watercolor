@@ -137,12 +137,7 @@ h5 {
   
   
   
-#wher {
-    margin-right: -25px; /* Optional: Add margin between the spans */
-}
-#when {
-    margin-right: -20px;
-}
+
 /* CSS */
 /* test starts*/
 .whenwhere {
@@ -163,17 +158,17 @@ h5 {
 
 #when {
     opacity: 1;
-    left: 250px;
+    left: 175px;
 }
 
 #where {
     transform: translateY(20px); /* Adjust as needed */
-    left: 295px;
+    left: 225px;
 }
 
 #ever{
     position: absolute;
-    left: 875px;
+    left: 800px;
 }
 
 
