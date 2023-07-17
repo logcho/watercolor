@@ -92,7 +92,7 @@ h5 {
     font-size: 25px;
     overflow: hidden;
 
-    white-space: nowrap;
+    white-space: break-word;
     width: 0;
     animation: typing 1s steps(25, end) forwards;
   }
