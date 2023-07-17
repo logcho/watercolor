@@ -551,6 +551,12 @@ footer p {
     h6 .type4 {
         font-size: 15px;
     }
+
+    .download img {
+        width: 150px;
+        height: auto;
+        margin-top: 100px;
+    }
     /* NAVBAR NAVBAR NAVBAR */
     .popup {
         bottom: 60px;
