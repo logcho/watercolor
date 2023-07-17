@@ -211,7 +211,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 3600px;
-    scroll-snap-align: start;
+    overflow-x: hidden;
 }
 
 .horizontal {
