@@ -1,7 +1,7 @@
 window.onload = () => {
   const letters = "abcdefghijklmnopqrstuvwxyz";
   let intervals = [];
-  const h2Elements = document.querySelectorAll("h2, h4");
+  const h2Elements = document.querySelectorAll("h2");
 
   const applyEffect = (element) => {
     let interval = null;
