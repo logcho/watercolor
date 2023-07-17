@@ -76,6 +76,16 @@
 
         </main>
 
+        <script>
+        if (screen.orientation && screen.orientation.lock) {
+              // Lock the screen orientation to "portrait-primary"
+              screen.orientation.lock("portrait-primary").catch(function(error) {
+                console.error("Screen orientation lock failed:", error);
+              });
+            }
+        </script>
+
+        
         <div class="popup"><h4>click me</h4></div>
         <button class="toggle_btn"><img src="images/logo.png" alt="logo"></button>
         <div class="dropdown_menu">
