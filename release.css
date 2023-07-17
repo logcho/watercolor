@@ -38,7 +38,8 @@ header {
     /* makes text center */
     justify-content: center;
     align-items: center;
-    color: white
+    color: white;
+    overflow-x: hidden;
 }
 header img {
     width: 100%;
