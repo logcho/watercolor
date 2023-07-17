@@ -65,6 +65,7 @@ h5 {
 
 .c1 {
     display: inline-block;
+    word-wrap: break-word;
   }
   
   .c2 {
