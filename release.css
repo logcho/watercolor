@@ -522,6 +522,9 @@ footer p {
         width: auto;
         margin-top: 0px;
     }
+    header {
+        margin-top: 0px;
+    }
     h1 {
         font-size: 80px;
     }
