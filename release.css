@@ -520,6 +520,7 @@ footer p {
     header img{
         height: 50px;
         width: auto;
+        margin-top: 0px;
     }
     h1 {
         font-size: 80px;
