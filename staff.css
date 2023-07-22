@@ -77,7 +77,7 @@ h2 {
 
 .team img {
     width: 200px;
-    height: 200px;
+    height: auto;
     justify-content: space-around;
     border: 5px solid black;
     justify-content: center;
