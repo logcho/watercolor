@@ -41,7 +41,7 @@ main {
     color: black;
     justify-content: center;
     align-items: center;
-    height: 3250px;
+    height: 2850px;
     padding-top: 50px;
 }
 
@@ -170,7 +170,7 @@ footer p {
 
 @media only screen and (max-width: 768px) {
     main {
-        height: 3500px;
+        height: 3300px;
     }
 
 
