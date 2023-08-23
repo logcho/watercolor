@@ -156,7 +156,12 @@ footer p {
 @media screen and (max-width: 900px) {
   main {
     height: auto;
-  }
+}
+ .header img {
+     width: 20px
+     height: auto;
+     margin: 20px;
+ }
   .about {
     flex-direction: column;
   }
