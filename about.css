@@ -61,6 +61,7 @@ h3 {
   line-height: 1.5;
   font-family: 'Urbanist';
   font-weight: normal;
+    text-allign: justify;
 }
 .section {
     background-image: linear-gradient(white, #E4FFFA);
