@@ -22,7 +22,6 @@
     padding: 0;
     box-sizing: border-box;
 
-
 }
 
 body {
@@ -38,8 +37,7 @@ header {
     /* makes text center */
     justify-content: center;
     align-items: center;
-    color: white;
-    overflow-x: hidden;
+    color: white
 }
 header img {
     width: 100%;
@@ -66,7 +64,6 @@ h5 {
 
 .c1 {
     display: inline-block;
-    word-wrap: break-word;
   }
   
   .c2 {
@@ -92,7 +89,7 @@ h5 {
     font-size: 25px;
     overflow: hidden;
 
-    white-space: break-word;
+    white-space: nowrap;
     width: 0;
     animation: typing 1s steps(25, end) forwards;
   }
@@ -140,7 +137,12 @@ h5 {
   
   
   
-
+#wher {
+    margin-right: -25px; /* Optional: Add margin between the spans */
+}
+#when {
+    margin-right: -20px;
+}
 /* CSS */
 /* test starts*/
 .whenwhere {
@@ -161,17 +163,17 @@ h5 {
 
 #when {
     opacity: 1;
-    left: 175px;
+    left: 250px;
 }
 
 #where {
     transform: translateY(20px); /* Adjust as needed */
-    left: 225px;
+    left: 295px;
 }
 
 #ever{
     position: absolute;
-    left: 800px;
+    left: 875px;
 }
 
 
@@ -193,8 +195,7 @@ h5 {
     height: 100vh;
 }
 .word {
-    width: 300px;
-    
+    width: 200px;
 }
 .rules {
     height: 100vh;
@@ -210,8 +211,8 @@ main {
     color: white;
     justify-content: center;
     align-items: center;
-    height: 3300px;
-    overflow-x: hidden;
+    height: 3600px;
+    scroll-snap-align: start;
 }
 
 .horizontal {
@@ -254,12 +255,14 @@ h7 {
   
   @keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 50px #e60073, 0 0 70px #e60073;
     }
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
   }
+  
+
 
 
 
@@ -274,7 +277,6 @@ h7 {
     width: 100%;
     height: 100%;
     z-index: -1;
-    overflow: hidden;
   }
   
   .circle {
@@ -463,7 +465,7 @@ footer p {
     width: 100vw;
     max-width: 100%;
     height: 50px;
-    overflow: hidden;
+    overflow-x: hidden;
     color: white;
     font-size: 50px;
     pointer-events: none;
@@ -512,6 +514,7 @@ footer p {
 
 
 
+/* MOBILE MOBILE MOBILE */
 
 @media only screen and (max-width: 768px) {
     main {
@@ -520,13 +523,9 @@ footer p {
     header img{
         height: 50px;
         width: auto;
-        margin-top: 0px;
-    }
-    header {
-        margin-top: 0px;
     }
     h1 {
-        font-size: 80px;
+        font-size: 100px;
     }
     .glow {
         font-size: 80px;
@@ -537,29 +536,23 @@ footer p {
         font-size: 30px;
     }
     h5 {
-        font-size: 20px;
+        font-size: 30px;
     }
     h6 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     h6 .type {
-        font-size: 15px;
+        font-size: 20px;
     }
     h6 .type2 {
-        font-size: 15px;
+        font-size: 20px;
     }
     h6 .type3 {
-        font-size: 15px;
+        font-size: 20px;
     }
     h6 .type4 {
-        font-size: 15px;
-    }
-
-    .download img {
-        width: 150px;
-        height: auto;
-        margin-top: 100px;
+        font-size: 20px;
     }
     /* NAVBAR NAVBAR NAVBAR */
     .popup {
@@ -602,15 +595,15 @@ footer p {
     }
 
     #when {
-        left: 5px;
+        left: 90px;
     }
     
     #where {
-        left: 20px;
+        left: 105px;
     }
     
     #ever{
-        left: 205px;
+        left: 335px;
     }
     /* NAVBAR NAVBAR NAVBAR */
 
