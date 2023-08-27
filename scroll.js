@@ -2,7 +2,7 @@ window.addEventListener('scroll', function() {
     var whenElement = document.querySelector('#when');
     var whereElement = document.querySelector('#where');
 
-    if (window.scrollY >= 1000) {  // Replace 100 with the actual scroll position where you want the text to change
+    if (window.scrollY >= 1550) {  // Replace 100 with the actual scroll position where you want the text to change
         whenElement.style.opacity = '0';
         whenElement.style.transform = 'translateY(-20px)'; // Again, adjust this as necessary
 
