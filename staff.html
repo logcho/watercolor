@@ -3,133 +3,105 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Watercolor</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="images/logo.png" type="image/png">
         <link rel="stylesheet" href="staff.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
     </head>
     <body>
-
-
-        <header>
-            <img src="images/arrow.png" alt="arrow" class="backarrow">
-        </header>
-        <script>
-            var goBackLinks = document.querySelectorAll('.backarrow');
-            for (var i = 0; i < goBackLinks.length; i++) {
-                goBackLinks[i].addEventListener('click', function(event) {
-                    event.preventDefault(); // Prevent the default link behavior
-                    history.go(-1); // Go back to the previous page
-                });
-            }
-        </script>
+      <header>
+          <img src="images/arrow.png" alt="arrow" class="backarrow">
+      </header>
+      <script>
+          var goBackLinks = document.querySelectorAll('.backarrow');
+          for (var i = 0; i < goBackLinks.length; i++) {
+              goBackLinks[i].addEventListener('click', function(event) {
+                  event.preventDefault(); // Prevent the default link behavior
+                  history.go(-1); // Go back to the previous page
+              });
+          }
+      </script>
         <main>
-            <h1>The Team</h1>
-
-            <div class="team">
-                <div class="person">
-                    <div class="profile">
-                        <img src="images/abraham.JPEG" alt="logo">
+          <h1>The Team</h1>
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                  <li class="card">
+                    <div class="img"><img src="images/kelvin.png" alt="img" draggable="false"></div>
+                    <h2>Kelvin Ye</h2>
+                    <span>PRESIDENT OF OPERATIONS<br><br>UNIVERSITY OF SOUTHERN CALIFORNIA</span>
+                    <span>BUSINESS OF INNOVATION</span>
+                    <div class="socials">
+                      <a href="https://instagram.com/arloshibe?igshid=MzRlODBiNWFlZA=="><img src="images/instagram.png" alt=""></a>
+                      <a href="https://www.linkedin.com/in/kelvin-ye-7a11b0235"><img src="images/linkedin.png" alt=""></a>
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/abraham.JPEG" alt="img" draggable="false"></div>
+                    <h2>Abraham Yoon</h2>
+                    <span>CHIEF EXECUTIVE OF OPERATIONS<br><br>OHIO STATE UNIVERSITY</span>
+                    <span>ACCOUNTING</span>
+                    <div class="socials">
+                      <a href="https://instagram.com/abraham.yoon?igshid=MjEwN2IyYWYwYw=="><img src="images/instagram.png" alt=""></a>
+                      <a href="https://www.linkedin.com/in/abraham-yoon-779602255"><img src="images/linkedin.png" alt=""></a>
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/ahbinav.png" alt="img" draggable="false"></div>
+                    <h2>Ahbinav Malkoochi</h2>
+                    <span>VICE PRESIDENT<br><br>UNIVERSITY OF TEXAS AT DALLAS</span>
+                    <span>COMPUTER SCIENCE</span>
+                    <div class="socials">
+                      <a href="https://www.instagram.com/abhinavmalkoochi/?igshid=MzRlODBiNWFlZA%3D%3D"><img src="images/instagram.png" alt=""></a>
+                      <a href="https://www.linkedin.com/in/abhinav-m-3a6bb220a/"><img src="images/linkedin.png" alt=""></a>
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/logan.png" alt="img" draggable="false"></div>
+                    <h2>Logan Choi</h2>
+                    <span>BRAND MANAGER<br><br>SOUTHERN METHODIST UNIVERSITY</span>
+                    <span>COMPUTER SCIENCE</span>
+                    <div class="socials">
+                      <a href="https://www.instagram.com/lognchoi/"><img src="images/instagram.png" alt=""></a>
+                      <a href="https://www.linkedin.com/in/logan-choi-879438264"><img src="images/linkedin.png" alt=""></a>
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/anish.png" alt="img" draggable="false"></div>
+                    <h2>Anish Alle</h2>
+                    <span>President of Management<br><br>PLANO WEST SENIOR HIGH SCHOOL</span>
+                    <span>COMPUTER SCIENCE</span>
+                    <div class="socials">
+                      <a href="https://instagram.com/itsanish_here?igshid=MzRlODBiNWFlZA=="><img src="images/instagram.png" alt=""></a>
+                      <a href="https://www.linkedin.com/in/anish-reddy-alle-2924b51b9"><img src="images/linkedin.png" alt=""></a>
+                    </div>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/krish.png" alt="img" draggable="false"></div>
+                    <h2>Krish Joshi</h2>
+                    <span>GAME DEVELOPER<br><br>PLANO WEST SENIOR HIGH SCHOOL</span>
+                    <span>COMPUTER SCIENCE</span>
+                    <div class="socials">
+                      <a href="https://www.instagram.com/kjo005/?igshid=MzRlODBiNWFlZA%3D%3D"><img src="images/instagram.png" alt=""></a>
+                      <a href="https://www.linkedin.com/in/krish-joshi-16381024b"><img src="images/linkedin.png" alt=""></a>
 
                     </div>
-                    <div class="description">
-                        <h2>Abraham Yoon</h2>
-                        <p class="position">CHIEF EXECUTIVE OFFICER</p>
-                        <p><br>OHIO STATE UNIVERSITY<br>ACCOUNTING</p>
-                    </div>
-
-                </div>
-
-                <div class="person">
-                    <div class="profile">
-                        <img src="images/ahbinav.png" alt="logo">
-
-                    </div>
-                    <div class="description">
-                        <h2>Abhinav Malkoochi</h2>
-                        <p class="position">CO-FOUNDER</p>
-                        <p><br>UNIVERSITY OF TEXAS AT DALLAS<br>COMPUTER SCIENCE</p>
-                    </div>
-
-                </div>
-
-                <div class="person">
-                    <div class="profile">
-                        <img src="images/kelvin.png" alt="logo">
-
-                    </div>
-                    <div class="description">
-                        <h2>Kelvin Ye</h2>
-                        <p class="position">PRESIDENT OF OPERATIONS</p>
-                        <p><br>UNIVERSITY OF SOUTHERN CALIFORNIA<br>ART TECH AND THE BUSINESS OF INNOVATION</p>
-                    </div>
-                </div>
-
-                <div class="person">
-                    <div class="profile">
-                        <img src="images/logan.png" alt="logo">
-
-                    </div>
-                    <div class="description">
-                        <h2>Logan Choi</h2>
-                        <p class="position">BRAND MANAGER</p>
-                        <p><br>SOUTHERN METHODIST UNIVERSITY<br>COMPUTER SCIENCE</p>
-                    </div>
-                </div>
-
-
-                <div class="person">
-                    <div class="profile">
-                        <img src="images/anish.png" alt="logo">
-                    </div>
-                    <div class="description">
-                        <h2>Anish Alle</h2>
-                        <p class="position">PRESIDENT OF MANAGEMENT</p>
-                        <p><br>PLANO WEST SENIOR HIGH SCHOOL<br>COMPUTER SCIENCE</p>
-                    </div>
-
-                </div>
-
-                <div class="person">
-                    <div class="profile">
-                        <img src="images/krish.png" alt="logo">
-                    </div>
-                    <div class="description">
-                        <h2>Krish Joshi</h2>
-                        <p class="position">GAME DEVELOPER</p>
-                        <p><br>PLANO WEST SENIOR HIGH SCHOOL<br>COMPUTER SCIENCE</p>
-                    </div>
-
-                </div>
-
-                
-                <div class="person">
-                    <div class="profile">
-                        <img src="images/nate.png" alt="logo">
-                    </div>
-                    <div class="description">
-                        <h2>Nathan Phonesprasert</h2>
-                        <p class="position">GAME DEVELOPER</p>
-                        <p><br>SYRACUSE<br>FINANCE</p>
-                    </div>
-                </div>
-
-            </div>
-
-
+                  </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
 
         </main>
-      
 
-        <footer>
-            <div class="marquee">
-                <div class="track">
-                  <div class="content">&nbsp;watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor</div>
-                </div>
+        <div class="marquee">
+            <div class="track">
+                <div class="content">&nbsp;watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor</div>
             </div>
-
-            <div class="footer-icons">
+        </div>
+        <footer>
+            <div class="footer_icons">
                 <a href="https://discord.gg/mw4y6QZYfv"><img src="images/Discord - Negative.png"></a>
                 <a href="https://www.instagram.com/watercolorgames/"><img src="images/Instagram - Negative.png"></a>
                 <a href="https://www.youtube.com/@WatercolorGames"><img src="images/YouTube - Negative.png"></a>
@@ -139,5 +111,6 @@
             <p>WATERCOLOR GAMES 2023<br>ALL RIGHTS RESERVED</p>
         </footer>
 
+        <script src="script.js" defer></script>
     </body>
 </html>
