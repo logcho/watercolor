@@ -3,34 +3,29 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Watercolor</title>
+        <title>DOT</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="release.css">
-
+        <link rel="stylesheet" href="dot.css">
+        <link rel="icon" href="images/logo.png" type="image/png">
     </head>
     <body>
-
+        <script src="background.js"></script>
         <div id="background"></div>
-        <script src="release.js"></script>
-        
-
+        <div class="parallax"></div>
         <main>
-            
-            <script src="text.js"></script>
-            <div class="dot">
-                <header>
-                    <img src="images/dotbanner.png" alt="">
-                </header>
-                <div class="horizontal">
+            <div class="section1">
+                <div class="text">
                     <div class="word">
-                        <h2 data-value="reaction">reaction</h2>
+                        <h1 data-value="reaction">reaction</h1>
                     </div>
+                    
                     <div class="word">
-                        <h2 data-value="recollection">recollection</h2>
+                        <h1 data-value="recollection">recollection</h1>
                     </div>
+
                     <div class="word">
-                        <h2 data-value="perfection">perfection</h2>
+                        <h1 data-value="perfection">perfection</h1>
                     </div>
                 </div>
                 <div class="download">
@@ -38,55 +33,53 @@
                     <img src="images/googleplay.png" alt="">
                 </div>
             </div>
-            
 
             <script src="scroll.js"></script>
-            <script src="lock.js"></script>
-            <div class="ever">
-                <h5>a game meant to be played...</h5>
-                <div class="whenwhere">
-                    <h1 class="word-part" id="when">when</h1>
-                    <h1 class="word-part" id="where">wher</h1>
-                    <h1 id = "ever">ever</h1>
+            <div class="section2">
+                <h2>a game meant to be played...</h2>
+                <div class="text2">
+
+                    <div class="center">
+                        <h3 class="word-part" id="when">when</h3>
+                        <h3 class="word-part" id="where">wher</h3>
+                        <h3 id = "ever">ever</h3>
+                    </div>
+                    
                 </div>
             </div>
+
+
             
-            <script src="scroll2.js"></script>
-            <script src = "whenscroll.js"></script>
-            <div class="rules">
-                <h5>there are four rules</h5>
-                <h6 id="typer">
-                    <div class="c1"><div class="type">1. Tap the dots in the order they appear in</div></div>
-                    <br><br>
-                    <div class="c2"><div class="type2">2. Avoid the bad dots</div></div>
-                    <br><br>
-                    <div class="c3"><div class="type3">3. Watch out for the timer</div></div>
-                    <br><br>
-                    <div class="c4"><div class="type4">4. Have fun</div></div>
-                    <br><br>
-                </h6>                  
-            </div>
-           
-            <div class="coming">
-                <h1 class="glow">
-                    COMING SOON
-                </h1>
+            <div class="section3">
+                <h2>there are four rules</h2>
+                <div class="type">
+                    <h3 id="demo"></h3>
+                    <h3 id="demo2"></h3>
+                    <h3 id="demo3"></h3>
+                    <h3 id="demo4"></h3>
+
+                </div>
 
             </div>
+
+            <script src="type_effect.js"></script>
+
 
         </main>
+        <div class="parallax2"></div>
 
-        <div class="popup"><h4>click me</h4></div>
+
+        <div class="popup"><h2>click me</h2></div>
         <button class="toggle_btn"><img src="images/logo.png" alt="logo"></button>
         <div class="dropdown_menu">
             <div class="projects">
                 <ul>
-                    <h3><i>Projects</i></h3>
-                    <li><a href="home.html">LINE</a></li>
+                    <h4><i>Projects</i></h3>
+                    <li><a href="index.html">LINE</a></li>
                 </ul>
             </div>
             <div class="navigation">
-                <h3><i>Watercolor</i></h3>
+                <h4><i>Watercolor</i></h3>
                 <ul>
                     <li><a href="staff.html">STAFF</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
@@ -96,15 +89,15 @@
         </div>
         <div class="overlay"></div>
         <script src="navbar.js"></script>
+        
 
-        <footer>
-            <div class="marquee">
-                <div class="track">
-                  <div class="content">&nbsp;watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor</div>
-                </div>
+        <div class="marquee">
+            <div class="track">
+                <div class="content">&nbsp;watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor-watercolor</div>
             </div>
-
-            <div class="footer-icons">
+        </div>
+        <footer>
+            <div class="footer_icons">
                 <a href="https://discord.gg/mw4y6QZYfv"><img src="images/Discord - Negative.png"></a>
                 <a href="https://www.instagram.com/watercolorgames/"><img src="images/Instagram - Negative.png"></a>
                 <a href="#"><img src="images/YouTube - Negative.png"></a>
@@ -113,6 +106,7 @@
             </div>
             <p>WATERCOLOR GAMES 2023<br>ALL RIGHTS RESERVED</p>
         </footer>
-
+        
+        <script src="text_effect.js" async defer></script>
     </body>
 </html>
