@@ -365,6 +365,14 @@ a:hover {
         width: 150px;
         height: auto;
     }
+    .text {
+        display: flex;
+        flex-direction: column;
+        padding-top: 300px;
+    }
+    .word {
+        margin: 20px 0;
+    }
     .section2 h2 {
         padding-top: 150px;
         font-size: 20px;
