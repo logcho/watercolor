@@ -65,7 +65,7 @@ main {
 }
 .parallax {
     /* The image used */
-    background-image: url("dot.png");
+    background-image: url("images/dot.png");
     /* Set a specific height */
     min-height: 100vh; 
     /* Create the parallax scrolling effect */
