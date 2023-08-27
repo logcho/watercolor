@@ -1,7 +1,7 @@
 window.onload = () => {
   const letters = "abcdefghijklmnopqrstuvwxyz";
   let intervals = [];
-  const h2Elements = document.querySelectorAll("h2");
+  const h2Elements = document.querySelectorAll("h1"); // Updated the selector to "h2"
 
   const applyEffect = (element) => {
     let interval = null;
@@ -24,17 +24,25 @@ window.onload = () => {
         clearInterval(interval);
       }
 
-      iteration += 1 / 10;
+      iteration += 1 / 4;
     }, 30);
 
     intervals.push(interval);
   };
 
-  // Apply effect on mouseover for each h2 and h4 element
+  const checkScrollAndApplyEffect = () => {
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    if (scrollPosition >= 500) {
+      h2Elements.forEach(applyEffect);
+      window.removeEventListener("scroll", checkScrollAndApplyEffect); // Remove the scroll event listener once animation is triggered
+    }
+  };
+
+  // Add scroll event listener
+  window.addEventListener("scroll", checkScrollAndApplyEffect);
+
+  // Apply effect on mouseover for each h2 element
   h2Elements.forEach((element) => {
     element.onmouseover = () => applyEffect(element);
   });
-
-  // Apply effect onload for each h2 and h4 element
-  h2Elements.forEach(applyEffect);
 };
