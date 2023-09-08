@@ -166,6 +166,24 @@ h1 {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
+    footer {
+    height: 200px;
+  }
+  .marquee {
+    height: 40px;
+    font-size: 40px;
+  }
+  .footer_icons {
+    padding: 55px 0px 50px 0px;
+}
+  .footer_icons img {
+    width: 30px;
+    height: auto;
+    margin: 0px 30px
+  }
+  footer p {
+    font-size: 10px;
+  } 
 }
 
 @media screen and (max-width: 600px) {
@@ -173,6 +191,24 @@ h1 {
     overflow-x: hidden;
     grid-auto-columns: 100%;
   }
+    footer {
+    height: 200px;
+  }
+  .marquee {
+    height: 40px;
+    font-size: 40px;
+  }
+  .footer_icons {
+    padding: 55px 0px 50px 0px;
+}
+  .footer_icons img {
+    width: 30px;
+    height: auto;
+    margin: 0px 30px
+  }
+  footer p {
+    font-size: 10px;
+  } 
 }
 
 
