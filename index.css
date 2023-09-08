@@ -358,6 +358,9 @@ a:hover {
 
 
 @media screen and (max-width: 900px) {
+    * {
+        overflow-x:hidden;
+    }
     .section1 h1 {
         font-size: 20px;
     }
