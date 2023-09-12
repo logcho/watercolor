@@ -111,7 +111,42 @@ footer p {
     height: auto;
     margin: 0px 40px
 }
-
+.top_left {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 30s linear infinite;
+    width: 450px;
+    z-index: 1;
+}
+.top_right {
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotate 30s linear infinite;
+    width: 300px;
+    z-index: 1;
+}
+.bottom_left {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    animation: rotate 30s linear infinite;
+    width: 250px;
+    z-index: 1;
+}
+.bottom_right {
+    position: absolute;
+    top: 95%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    animation: rotate 30s linear infinite;
+    width: 350px;
+    z-index: 1;
+}
 
 @media screen and (max-width: 800px) {
     .footer_icons {
@@ -121,6 +156,17 @@ footer p {
         width: 30px;
         margin: 0px 30px
     }
-
+    .top_left{
+        width: 150px;
+    }
+    .top_right{
+        width: 150px;
+    }
+    .bottom_left{
+        width: 100px;
+    }
+    .bottom_right{
+        width: 150px;
+    }
     
 }
