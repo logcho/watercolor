@@ -160,7 +160,7 @@ main{
 }
 .comingsoon h3{
     text-align: center;
-    font-size: calc(8vw + 8vh);
+    font-size: calc(6vw + 6vh);
     font-family: 'Urbanist';
     font-weight: normal;
     color: rgba(0, 0, 0, 0.5);
