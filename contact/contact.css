@@ -99,7 +99,7 @@ footer p {
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: white;
+    color: white;https://www.vhlcentral.com/home
 }
 .footer_icons {
     display: flex;
@@ -121,10 +121,6 @@ footer p {
         width: 30px;
         margin: 0px 30px
     }
-    input{
-        width: 100px;
-        font-size: 15px;
-    }
-    
+
     
 }
