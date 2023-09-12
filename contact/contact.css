@@ -19,7 +19,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #E4FFFA;
-
+    overflow-x: hidden;
 }
 main{
     height: auto;
