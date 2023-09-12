@@ -239,6 +239,7 @@ footer p {
 }
 .popup.open {
     opacity: 0;
+    z-index: -1;
 }
 .popup h2 {
     text-align: center;
