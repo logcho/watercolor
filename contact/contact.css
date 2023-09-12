@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@font-face {
+    font-family: 'PPMondwest';
+    src: url('../fonts/PPMondwest-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'PPEditorialOld';
+    src: url('../fonts/PPEditorialOld-Italic.otf') format('opentype');
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #E4FFFA;
+
+}
+main{
+    height: auto;
+}
+
+.back{
+    padding: 10px 0;
+
+
+    background-color: transparent;
+}
+.back img{
+    padding: 10px;
+}
+.section1{
+    padding: 50px 0 100px;
+    background-color: transparent;
+}
+h1 {
+    text-align: center;
+    font-family: 'PPEditorialOld';
+    font-size: 50px;
+
+}
+h2{
+    text-align: center;
+    font-family: 'Urbanist';
+    font-weight: normal;
+    font-size: 20px;
+}
+p{
+    padding: 20px 0;
+    font-family: 'Urbanist';
+    font-size: 20px;
+}
+.contact{
+    padding: 50px;
+    background-image: linear-gradient(#E4FFFA, #F3E4FF);
+}
+.careers{
+    padding: 50px;
+    background-image: linear-gradient(#F3E4FF, #E4FFFA);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    margin: 10px 0 0;
+    padding: 2px;
+    width: 400px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid black;
+    background: transparent;
+}
+button{
+    margin: 10px 0 0;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E4FFFA;
+    color: gray;
+}
+button:hover{
+    color: black;
+}
+footer {
+    padding: 40px 0;
+    background-color: black;
+}
+footer p {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+.footer_icons {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.footer_icons img {
+    width: 40px;
+    height: auto;
+    margin: 0px 40px
+}
+
+
+@media screen and (max-width: 800px) {
+    .footer_icons {
+        padding: 30px 0;
+    }
+    .footer_icons img {
+        width: 30px;
+        margin: 0px 30px
+    }
+    
+    
+}
