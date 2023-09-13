@@ -16,8 +16,7 @@
 }
 
 body{
-    display: flex;
-    flex-direction: column;
+    position: relative;
     background-color: #E4FFFA;
     overflow-x: hidden;
 }
@@ -134,7 +133,7 @@ footer p {
 }
 .bottom_left {
     position: absolute;
-    top: 90%;
+    top: 60%;
     left: 0;
     transform: translate(-50%, -50%);
     animation: rotate 30s linear infinite;
@@ -143,7 +142,7 @@ footer p {
 }
 .bottom_right {
     position: absolute;
-    top: 95%;
+    top: 65%;
     left: 100%;
     transform: translate(-50%, -50%);
     animation: rotate 30s linear infinite;
