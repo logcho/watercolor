@@ -59,11 +59,9 @@ p{
 }
 .contact{
     padding: 50px;
-    background-image: linear-gradient(#E4FFFA, #F3E4FF);
 }
 .careers{
     padding: 50px;
-    background-image: linear-gradient(#F3E4FF, #E4FFFA);
 }
 form{
     display: flex;
@@ -120,7 +118,7 @@ footer p {
     transform: translate(-50%, -50%) rotate(0deg);
     animation: rotate 30s linear infinite;
     width: 450px;
-    z-index: 1;
+    z-index: -1;
 }
 .top_right {
     position: absolute;
@@ -129,7 +127,7 @@ footer p {
     transform: translate(-50%, -50%) rotate(0deg);
     animation: rotate 30s linear infinite;
     width: 300px;
-    z-index: 1;
+    z-index: -1;
 }
 .bottom_left {
     position: absolute;
@@ -138,7 +136,7 @@ footer p {
     transform: translate(-50%, -50%);
     animation: rotate 30s linear infinite;
     width: 250px;
-    z-index: 1;
+    z-index: -1;
 }
 .bottom_right {
     position: absolute;
@@ -147,7 +145,7 @@ footer p {
     transform: translate(-50%, -50%);
     animation: rotate 30s linear infinite;
     width: 350px;
-    z-index: 1;
+    z-index: -1;
 }
 
 @media screen and (max-width: 800px) {
